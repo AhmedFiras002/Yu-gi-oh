@@ -1,3 +1,115 @@
-.hidden{
+/* Reset and general styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #071318;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Duelist container layout */
+.duelist-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Duelist world styling */
+.duelist-world {
+    background-color: #111F30;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+    background-color: #FFD700;
+    color: #111F30;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+button:hover {
+    background-color: #FEC92A;
+}
+
+/* Hidden elements */
+.hidden {
     display: none;
 }
+
+/* Player points styling */
+.player-points {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFD700;
+    margin-top: 15px;
+    text-align: center;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Styling for Player 2 */
+section:nth-child(1) .duelist-world {
+    background-color: #1A1A1A;
+}
+
+/* Restart button */
+#restart {
+    background-color: #FFD700;
+    color: #111F30;
+    border: none;
+    padding: 12px 24px; /* Adjust padding for a larger button */
+    font-size: 18px; /* Increase font size */
+    cursor: pointer;
+    margin: 20px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    outline: none;
+    display: inline-block; /* Ensure button size affects layout */
+    text-decoration: none; /* Remove default text underline */
+}
+
+#restart:hover {
+    background-color: #FEC92A;
+}
+
+
+
+
