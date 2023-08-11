@@ -72,17 +72,14 @@ if (ratingPlayer1 !== undefined && ratingPlayer2 !== undefined) {
 }
 
 function gameLogic(){
-    console.log(ratingPlayer1);
-    console.log(ratingPlayer2);
+
     if(ratingPlayer1>ratingPlayer2){
         scorePlayer1++;
         let container = document.querySelector("#player1-points");
         container.innerHTML="";
         container.insertAdjacentHTML("beforeend","points: "+scorePlayer1)
-        console.log('player 1 win');
     }else if(ratingPlayer1<ratingPlayer2){
         scorePlayer2++
-        console.log('player 2 win');
         let container = document.querySelector("#player2-points");
         container.innerHTML="";
         container.insertAdjacentHTML("beforeend","points: "+scorePlayer2)
