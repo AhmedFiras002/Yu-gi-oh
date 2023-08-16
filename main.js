@@ -9,7 +9,6 @@ let scorePlayer2 = 0;
  function init() {
     const buttonsPlayer1 = document.querySelectorAll("#attackingPlayer1, #defendingPlayer1");
     const buttonsPlayer2 = document.querySelectorAll("#attackingPlayer2, #defendingPlayer2");
-    
     buttonsPlayer1.forEach(button=>button.addEventListener('click',function(){
         document.querySelector("#attackingPlayer1").classList.add("hidden");
         document.querySelector("#defendingPlayer1").classList.add("hidden");
